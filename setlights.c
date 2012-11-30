@@ -390,7 +390,7 @@ int main(int argc, char *argv[])
 	char *my_string;
 	long rawcolor;
 
-    layoutloader("layout.conf.json");
+    layoutloader("/etc/moorescloud.light.layout.conf.json");
 
     retuid = setuid(0);     // root me!
     if (retuid == -1) {
